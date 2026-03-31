@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A modern, minimalist nature photo gallery featuring stunning landscapes and macro photography.">
+    <title>My photo gallery</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1 id="main-title">My photo gallery</h1>
+    </header>
+
+    <main id="gallery">
+        <!-- Photos will be dynamically added via JavaScript -->
+    </main>
+
+    <!-- Lightbox Overlay -->
+    <div id="lightbox" aria-hidden="true">
+        <button class="close-btn" aria-label="Close Lightbox">&times;</button>
+        <button class="nav-btn prev-btn" aria-label="Previous image">&#10094;</button>
+        
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Full Resolution Nature Content">
+        </div>
+
+        <button class="nav-btn next-btn" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
